@@ -15,6 +15,8 @@ object create_dataframe_from_json_file {
       .master("local[*]")
       .getOrCreate()
 
+    spark.sparkContext.setLogLevel("ERROR")
+
     // Code Block 1 Start Here
 
     val json_file_path = "E:\\pract_Dataset\\user_detail.json"
