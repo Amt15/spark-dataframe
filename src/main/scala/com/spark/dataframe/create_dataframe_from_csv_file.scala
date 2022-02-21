@@ -47,6 +47,9 @@ object create_dataframe_from_csv_file extends App {
   users_df_2.show()
   users_df_2.printSchema()
 
+  spark.stop()
+  println("Application Completed")
+
 
 
 
